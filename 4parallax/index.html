@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- https://matthew.wagerfield.com/parallax -->
+	<div class="container">
+		<div id="scene">
+			<div data-depth="-0.2" class="bg1">
+				<img src="img/bg1.png" alt="">
+			</div>
+			<div data-depth="0.2" class="m1">
+				<img src="img/bg2.png" alt="">
+			</div>
+			<div data-depth="0.1" class="m2">
+				<img src="img/bg3.png" alt="">
+			</div>
+			<div data-depth="0.1">
+				<img src="img/ellipsemain.png" alt="">
+			</div>
+			<div data-depth="-0.1">
+				<img src="img/ellipse1.png" alt="">
+			</div>
+			<div data-depth="-0.2">
+				<img src="img/ellipse2.png" alt="">
+			</div>
+			<div data-depth="0.2">
+				<img src="img/ellipse3.png" alt="">
+			</div>
+			<div data-depth="-0.1">
+				<img src="img/ellipse4.png" alt="">
+			</div>
+			<div data-depth="0.2">
+				<img src="img/rectangle1.png" alt="">
+			</div>
+			<div data-depth="0.3">
+				<img src="img/txt.png" alt="">
+			</div>
+			<div data-depth="-0.4" class="m2">
+				<img src="img/objm1.png" alt="">
+			</div>
+			<div data-depth="0.1" class="m2">
+				<img src="img/objm2.png" alt="">
+			</div>
+			<div data-depth="0.2" class="m2">
+				<img src="img/objm3.png" alt="">
+			</div>
+			<div data-depth="1.0">
+				<img src="img/obj1.png" alt="">
+			</div>
+			<div data-depth="0.3">
+				<img src="img/obj10.png" alt="">
+			</div>
+			<div data-depth="-0.3">
+				<img src="img/obj11.png" alt="">
+			</div>
+			<div data-depth="0.4">
+				<img src="img/obj12.png" alt="">
+			</div>
+			<div data-depth="-0.4">
+				<img src="img/obj13.png" alt="">
+			</div>
+			<div data-depth="1.2">
+				<img src="img/obj15.png" alt="">
+			</div>
+			<div data-depth="-1.2">
+				<img src="img/obj2.png" alt="">
+			</div>
+			<div data-depth="0.5">
+				<img src="img/obj3.png" alt="">
+			</div>
+			<div data-depth="-0.3">
+				<img src="img/obj4.png" alt="">
+			</div>
+			<div data-depth="-0.7">
+				<img src="img/obj5.png" alt="">
+			</div>
+			<div data-depth="0.3">
+				<img src="img/obj6.png" alt="">
+			</div>
+			<div data-depth="-0.9">
+				<img src="img/obj7.png" alt="">
+			</div>
+			<div data-depth="-0.5">
+				<img src="img/obj14.png" alt="">
+			</div>
+			<div data-depth="0.8">
+				<img src="img/obj8.png" alt="">
+			</div>
+			<div data-depth="1">
+				<img src="img/obj9.png" alt="">
+			</div>
+			<div data-depth="-0.2">
+				<img src="img/rectagle2.png" alt="">
+			</div>
+		</div>
+	</div><!-- container 끝 -->
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+	<script>
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+	</script>
+</body>
+
+</html>
