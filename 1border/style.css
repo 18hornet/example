@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    height: 100vh;
+}
+
+.loader_blob {
+    position: relative;
+    width: 630px;
+    height: 437px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* 가운데 배치, translate의 백분율의 기준이 자신이다 */
+    animation: imagemotion 6s infinite alternate;
+    overflow: hidden;
+}
+
+/* 스트로크 애니 */
+.ro {
+    position: absolute;
+    width: 630px;
+    height: 437px;
+    left: calc(50% - 320px);
+    top: calc(50% - 218.5px);
+    animation: rotate 6s infinite alternate;
+}
+
+.ro .loader_blob2 {
+    width: 630px;
+    height: 437px;
+    border: 1px solid #999;
+    animation: imagemotion 6s infinite alternate;
+}
+
+
+
+
+@keyframes imagemotion {
+    0% {
+        border-radius: 35% 65% 39% 61% / 35% 56% 44% 65%;
+    }
+
+    50% {
+        border-radius: 40% 60% 47% 53% / 44% 46% 54% 56%;
+    }
+
+    100% {
+        border-radius: 45% 55% 57% 43% / 44% 63% 37% 56%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
